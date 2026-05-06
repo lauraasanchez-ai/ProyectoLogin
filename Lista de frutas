@@ -23,7 +23,10 @@ class ListaFrutas extends StatelessWidget {
       title: 'Lista de Frutas', // title
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Lista de Frutas')),
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text('Lista de Frutas'),
+        ),
         body: ListView.separated(
           padding: const EdgeInsets.all(8),
           itemCount: entries.length,
